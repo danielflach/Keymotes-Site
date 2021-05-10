@@ -7,67 +7,70 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
     <title>Keymotes - A new way to Twitch chat</title>
-</head>
 
-<body background="img/keymotes-pattern.png">
+</head>
+<body>
     <nav>
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 19 19">
-            <path id="message_1_dots" d="M333.062,489.5a1.188,1.188,0,1,1,1.188-1.188A1.188,1.188,0,0,1,333.062,489.5Zm-3.562,0a1.188,1.188,0,1,1,1.188-1.188A1.188,1.188,0,0,1,329.5,489.5Zm-3.562,0a1.188,1.188,0,1,1,1.188-1.188A1.188,1.188,0,0,1,325.937,489.5Zm-3.562-9.5h14.25A2.375,2.375,0,0,1,339,482.375v14.25a2.375,2.375,0,0,1-3.692,1.976l-2.969-1.976h-9.964A2.375,2.375,0,0,1,320,494.25V482.375A2.375,2.375,0,0,1,322.375,480Zm0,14.25h10.687l3.563,2.375v-14.25h-14.25Z" transform="translate(-320 -480)" fill="#7b42ff" fill-rule="evenodd"/>
-          </svg>
-          <span>KEYMOTES</span>
+        <svg class="nav-left" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 20 20">
+            <path id="Talk_Bubble" data-name="Talk Bubble" d="M333.062,489.5a1.188,1.188,0,1,1,1.188-1.188A1.188,1.188,0,0,1,333.062,489.5Zm-3.562,0a1.188,1.188,0,1,1,1.188-1.188A1.188,1.188,0,0,1,329.5,489.5Zm-3.562,0a1.188,1.188,0,1,1,1.188-1.188A1.188,1.188,0,0,1,325.937,489.5Zm-3.562-9.5h14.25A2.375,2.375,0,0,1,339,482.375v14.25a2.375,2.375,0,0,1-3.692,1.976l-2.969-1.976h-9.964A2.375,2.375,0,0,1,320,494.25V482.375A2.375,2.375,0,0,1,322.375,480Zm0,14.25h10.687l3.563,2.375v-14.25h-14.25Z" transform="translate(-320 -480)" fill="#7b42ff" fill-rule="evenodd"/>
+        </svg>
+        <span class="darkGray nav-left">KEYMOTES</span>
+        <svg class="nav-right" id="hamburger" xmlns="http://www.w3.org/2000/svg" width="24" height="12" viewBox="0 0 24 12">
+            <g id="Hamburger" transform="translate(728.5 -46.5)">
+                <line id="Line_5" data-name="Line 5" x2="22" transform="translate(-727.5 47.5)" fill="none" stroke="#2f2e31" stroke-linecap="round" stroke-width="2"/>
+                <line id="Line_6" data-name="Line 6" x2="22" transform="translate(-727.5 52.5)" fill="none" stroke="#2f2e31" stroke-linecap="round" stroke-width="2"/>
+                <line id="Line_7" data-name="Line 7" x2="22" transform="translate(-727.5 57.5)" fill="none" stroke="#2f2e31" stroke-linecap="round" stroke-width="2"/>
+            </g>
+        </svg>
     </nav>
-    <div class="content-all">
-        
-        <div class="left-content">
-            <h1>A new way to Twitch chat</h1>
-            <h2>Set hotkeys for Twitch emotes & copy pastas <br>
-                with this simple but magical Twitch Extension.</h2>
+    <div class="split">
+        <div class="split-left">
+            <h1 class="darkGray">A new way to<br>Twitch chat</h1>
+            <h2>Set hotkeys for Twitch emotes & copy pastas<br>with this simple but magical Twitch Extension.</h2>
             <div class="signup-info">
                 <form name="submit-to-google-sheet" id="submit-to-google-sheet"> 
-                    <button class="signUp" id="signUp" type="submit">Sign Up</button>
-                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    <button class="signUp darkPurple" id="signUp" type="submit">Sign Up</button>
+                    <input class="lightGray" type="email" id="email" name="email" placeholder="Enter your email address" required>
                 </form>
             </div>
-            <p>We are currently in development. Sign up to be notified of our launch<br>
-                and be assured you will never receive spam. © 2021 Keymotes</p>
-            <div class="icons">
-               
-                <a href="www.twitch.tv/keymotes" target="_blank">
-                <svg id="Glitch_Copy" data-name="Glitch Copy" xmlns="http://www.w3.org/2000/svg" width="20" height="20.87" viewBox="0 0 20 20.87">
-                <g id="Social-Purple" transform="translate(0 -1)">
-                <g id="Social"><path id="Glitch-Copy" d="M1.406,1,0,4.582v14.64H5V21.87H7.813l2.656-2.648h4.063L20,13.771V1ZM18.125,12.837,15,15.951H10L7.344,18.6V15.951H3.125V2.869h15ZM15,6.451V11.9H13.125V6.451Zm-5,0V11.9H8.125V6.451Z" fill="#2f2e31" fill-rule="evenodd"/></g></g></svg></a>
-               
-                <a href="#" target="_blank">
-                <svg id="Twitter_Copy" data-name="Twitter Copy" xmlns="http://www.w3.org/2000/svg" width="20" height="17.073" viewBox="0 0 20 17.073">
-                <g id="Social-Purple" transform="translate(-43 -3)">
-                <g id="Social"><path id="Twitter-Copy" d="M60.644,5.7a4.28,4.28,0,0,0,1.8-2.384,7.977,7.977,0,0,1-2.606,1.046A4,4,0,0,0,56.846,3a4.209,4.209,0,0,0-4.1,4.31,4.487,4.487,0,0,0,.1.982,11.473,11.473,0,0,1-8.457-4.5,4.466,4.466,0,0,0-.555,2.168,4.373,4.373,0,0,0,1.825,3.588A3.968,3.968,0,0,1,43.8,9.005v.053A4.262,4.262,0,0,0,47.1,13.284a3.834,3.834,0,0,1-1.082.152,3.878,3.878,0,0,1-.771-.076,4.135,4.135,0,0,0,3.833,2.993,7.985,7.985,0,0,1-5.1,1.845A7.779,7.779,0,0,1,43,18.137a11.22,11.22,0,0,0,6.29,1.936c7.548,0,11.674-6.567,11.674-12.263,0-.187,0-.374-.011-.557A8.555,8.555,0,0,0,63,5.021,7.888,7.888,0,0,1,60.644,5.7Z" fill="#2f2e31" fill-rule="evenodd"/></g></g></svg></a>
+            <p class="darkGray">We are currently in development. Sign up to be notified of our launch<br>and be assured you will never receive spam. © 2021 Keymotes</p>
+            <div class="icons darkGray">
+                <a href="http://www.twitch.tv/keymotes" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20.87" viewBox="0 0 20 20.87">
+                    <path id="Glitch" d="M1.406,1,0,4.582v14.64H5V21.87H7.813l2.656-2.648h4.063L20,13.771V1ZM18.125,12.837,15,15.951H10L7.344,18.6V15.951H3.125V2.869h15ZM15,6.451V11.9H13.125V6.451Zm-5,0V11.9H8.125V6.451Z" transform="translate(0 -1)" fill="#2f2e31" fill-rule="evenodd"/>
+                </svg>
+                </a>   
                 
-                <a href="#" target="_blank">
-                <svg id="Instagram" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                <g id="Social-Purple" transform="translate(-86 -2)">
-                <g id="Social"><path id="Instagram-2" data-name="Instagram" d="M102.135,2H89.865A3.87,3.87,0,0,0,86,5.865v12.27A3.87,3.87,0,0,0,89.865,22h12.27A3.869,3.869,0,0,0,106,18.135V5.865A3.869,3.869,0,0,0,102.135,2Zm1.109,2.306.442,0v3.39l-3.38.011-.012-3.39,2.95-.008Zm-10.1,5.641A3.515,3.515,0,1,1,92.48,12a3.516,3.516,0,0,1,.666-2.053Zm10.906,8.188a1.919,1.919,0,0,1-1.917,1.917H89.865a1.919,1.919,0,0,1-1.917-1.917V9.947h2.987a5.468,5.468,0,1,0,10.131,0h2.986v8.188Z" fill="#2f2e31" fill-rule="evenodd"/></g></g></svg></a>
+                <a href="http://www.twitter.com/keymotes" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17.073" viewBox="0 0 20 17.073">
+                    <path id="Twitter" d="M60.644,5.7a4.28,4.28,0,0,0,1.8-2.384,7.977,7.977,0,0,1-2.606,1.046A4,4,0,0,0,56.846,3a4.209,4.209,0,0,0-4.1,4.31,4.487,4.487,0,0,0,.1.982,11.473,11.473,0,0,1-8.457-4.5,4.466,4.466,0,0,0-.555,2.168,4.373,4.373,0,0,0,1.825,3.588A3.968,3.968,0,0,1,43.8,9.005v.053A4.262,4.262,0,0,0,47.1,13.284a3.834,3.834,0,0,1-1.082.152,3.878,3.878,0,0,1-.771-.076,4.135,4.135,0,0,0,3.833,2.993,7.985,7.985,0,0,1-5.1,1.845A7.779,7.779,0,0,1,43,18.137a11.22,11.22,0,0,0,6.29,1.936c7.548,0,11.674-6.567,11.674-12.263,0-.187,0-.374-.011-.557A8.555,8.555,0,0,0,63,5.021,7.888,7.888,0,0,1,60.644,5.7Z" transform="translate(-43 -3)" fill="#2f2e31" fill-rule="evenodd"/>
+                </svg>
+                </a>
+                
+                <a href="http://www.instagram.com/keymotes" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <path id="Instagram" d="M102.135,2H89.865A3.87,3.87,0,0,0,86,5.865v12.27A3.87,3.87,0,0,0,89.865,22h12.27A3.869,3.869,0,0,0,106,18.135V5.865A3.869,3.869,0,0,0,102.135,2Zm1.109,2.306.442,0v3.39l-3.38.011-.012-3.39,2.95-.008Zm-10.1,5.641A3.515,3.515,0,1,1,92.48,12a3.516,3.516,0,0,1,.666-2.053Zm10.906,8.188a1.919,1.919,0,0,1-1.917,1.917H89.865a1.919,1.919,0,0,1-1.917-1.917V9.947h2.987a5.468,5.468,0,1,0,10.131,0h2.986v8.188Z" transform="translate(-86 -2)" fill="#2f2e31" fill-rule="evenodd"/>
+                </svg>
+                </a>      
                 
                 <a href="#" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="22.857" viewBox="0 0 20 22.857">
-                <g id="Discord-Logo-White" transform="translate(-35 -20)"><path id="Path_4" data-name="Path 4" d="M95.366,103.9a1.273,1.273,0,1,0,1.166,1.269A1.218,1.218,0,0,0,95.366,103.9Zm4.171,0a1.273,1.273,0,1,0,1.166,1.269A1.218,1.218,0,0,0,99.537,103.9Z" transform="translate(-52.434 -74.311)" fill="#2f2e31"/><path id="Path_5" data-name="Path 5" d="M52.657,20H37.343A2.349,2.349,0,0,0,35,22.354V37.806a2.349,2.349,0,0,0,2.343,2.354H50.3L49.7,38.046l1.463,1.36,1.383,1.28L55,42.857v-20.5A2.349,2.349,0,0,0,52.657,20ZM48.246,34.926s-.411-.491-.754-.926a3.606,3.606,0,0,0,2.069-1.36,6.54,6.54,0,0,1-1.314.674,7.522,7.522,0,0,1-1.657.491,8.006,8.006,0,0,1-2.96-.011,9.593,9.593,0,0,1-1.68-.491,6.7,6.7,0,0,1-.834-.389c-.034-.023-.069-.034-.1-.057a.158.158,0,0,1-.046-.034c-.206-.114-.32-.194-.32-.194a3.554,3.554,0,0,0,2,1.349c-.343.434-.766.949-.766.949a4.144,4.144,0,0,1-3.486-1.737,15.3,15.3,0,0,1,1.646-6.663,5.651,5.651,0,0,1,3.211-1.2l.114.137a7.71,7.71,0,0,0-3.006,1.5s.251-.137.674-.331a8.582,8.582,0,0,1,2.594-.72,1.126,1.126,0,0,1,.194-.023,9.67,9.67,0,0,1,2.309-.023,9.316,9.316,0,0,1,3.44,1.1,7.606,7.606,0,0,0-2.846-1.451l.16-.183a5.651,5.651,0,0,1,3.211,1.2,15.3,15.3,0,0,1,1.646,6.663A4.178,4.178,0,0,1,48.246,34.926Z" transform="translate(0 0)" fill="#2f2e31"/></g></svg></a>
-
+                    <g id="Discord" transform="translate(-35 -20)">
+                        <path id="Path_4" data-name="Path 4" d="M95.366,103.9a1.273,1.273,0,1,0,1.166,1.269A1.218,1.218,0,0,0,95.366,103.9Zm4.171,0a1.273,1.273,0,1,0,1.166,1.269A1.218,1.218,0,0,0,99.537,103.9Z" transform="translate(-52.434 -74.311)" fill="#2f2e31"/>
+                        <path id="Path_5" data-name="Path 5" d="M52.657,20H37.343A2.349,2.349,0,0,0,35,22.354V37.806a2.349,2.349,0,0,0,2.343,2.354H50.3L49.7,38.046l1.463,1.36,1.383,1.28L55,42.857v-20.5A2.349,2.349,0,0,0,52.657,20ZM48.246,34.926s-.411-.491-.754-.926a3.606,3.606,0,0,0,2.069-1.36,6.54,6.54,0,0,1-1.314.674,7.522,7.522,0,0,1-1.657.491,8.006,8.006,0,0,1-2.96-.011,9.593,9.593,0,0,1-1.68-.491,6.7,6.7,0,0,1-.834-.389c-.034-.023-.069-.034-.1-.057a.158.158,0,0,1-.046-.034c-.206-.114-.32-.194-.32-.194a3.554,3.554,0,0,0,2,1.349c-.343.434-.766.949-.766.949a4.144,4.144,0,0,1-3.486-1.737,15.3,15.3,0,0,1,1.646-6.663,5.651,5.651,0,0,1,3.211-1.2l.114.137a7.71,7.71,0,0,0-3.006,1.5s.251-.137.674-.331a8.582,8.582,0,0,1,2.594-.72,1.126,1.126,0,0,1,.194-.023,9.67,9.67,0,0,1,2.309-.023,9.316,9.316,0,0,1,3.44,1.1,7.606,7.606,0,0,0-2.846-1.451l.16-.183a5.651,5.651,0,0,1,3.211,1.2,15.3,15.3,0,0,1,1.646,6.663A4.178,4.178,0,0,1,48.246,34.926Z" transform="translate(0 0)" fill="#2f2e31"/>
+                    </g>
+                </svg>
+                </a>
             </div>
-                </div>
-
-<!-- Demo Video -->
-                <div class="right-content">
-
-            <video width="640" height="360">
+        </div>
+        <div class="split-right">
+            <video autoplay loop muted playsinline>
                 <source src="./videos/Keymotes_V2.mp4" type="video/mp4">
             </video>
-        
         </div>
-        
     </div>    
-    <script type="text/javascript" src="./script.js"></script>
+<script type="text/javascript" src="./script.js"></script>
 </body>
-
-
 </html>
 
 

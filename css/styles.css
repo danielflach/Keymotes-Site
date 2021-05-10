@@ -65,20 +65,19 @@ select {
 body {
   font-family: inter, sans-serif;
   background-image: url(/img/bg-Keymotes.png);
-  background-repeat: repeat;
-  height: auto; }
+  background-repeat: repeat; }
 
-span {
+h1 {
   font-size: 1.5rem;
   font-weight: 900; }
 
-h1 {
+h2 {
   font-size: 2.25rem;
   font-weight: 700;
   line-height: 2.5rem;
   margin-bottom: 1.5rem; }
 
-h2 {
+h3 {
   font-size: 0.875rem;
   font-weight: 400;
   margin-bottom: 1.5rem; }
@@ -91,15 +90,8 @@ p {
 nav {
   display: flex;
   align-items: center;
-  margin-left: 1.5rem;
-  margin-top: 1.5rem; }
-
-.nav-left {
-  margin-right: .2rem;
-  justify-content: flex-start; }
-
-.nav-right {
-  justify-content: flex-end; }
+  margin-top: 1rem;
+  margin-left: 1.5rem; }
 
 .signup-info {
   margin-bottom: 1rem; }
@@ -110,19 +102,17 @@ nav {
   background-color: white;
   margin-top: 4rem;
   padding-top: 4rem;
+  padding-bottom: 4rem;
   text-align: center;
   align-items: center; }
 
-.split-left {
-  width: 90%; }
-
-video {
-  width: 100%;
-  object-fit: scale-down;
-  margin-bottom: 4rem; }
-
 .icons {
-  display: none; }
+  display: none;
+  margin-bottom: 1rem;
+  margin-top: 2rem; }
+
+a {
+  cursor: url("/img/Kappa-Face.png"), auto; }
 
 button {
   background-color: #522FA4;
@@ -142,3 +132,43 @@ input {
   width: 190px;
   font-style: italic;
   text-align: center; }
+
+#hamburger {
+  position: relative;
+  margin-left: 40%; }
+
+@media only screen and (min-width: 1300px) {
+  .split {
+    flex-direction: row;
+    justify-content: center;
+    text-align: right;
+    margin-top: 10rem; }
+  .split-left {
+    margin-right: 2rem; }
+  .split-right {
+    margin-left: 2rem; }
+  h1 {
+    font-size: 1.7rem; }
+  nav {
+    justify-content: center;
+    margin-top: 3rem; }
+  nav svg {
+    margin-right: .5rem;
+    width: 30px;
+    height: 30px; } }
+
+@media only screen and (min-width: 640px) {
+  video {
+    width: 640px;
+    height: 360px; } }
+
+@media only screen and (min-width: 480px) {
+  .nav-right {
+    display: none; }
+  .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; }
+  p {
+    margin-bottom: 1rem; } }

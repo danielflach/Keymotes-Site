@@ -64,7 +64,7 @@ select {
 
 body {
   font-family: inter, sans-serif;
-  background-image: url(/img/bg-Keymotes.png);
+  background-image: url(img/bg-Keymotes.png);
   background-repeat: repeat; }
 
 h1 {
@@ -112,7 +112,7 @@ nav {
   margin-top: 2rem; }
 
 a {
-  cursor: url("/img/Kappa-Face.png"), auto; }
+  cursor: url(img/Kappa-Face.png), auto; }
 
 button {
   background-color: #522FA4;

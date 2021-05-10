@@ -18,7 +18,10 @@ function watch() {
     browserSync.init({
         server: {
             baseDir: './'
-        }
+        },
+        online: true,
+        tunnel: "test",
+        logLevel: "debug"
     });
     gulp.watch('./scss/**/*.scss', style);
     gulp.watch('./*.html').on('change', browserSync.reload);
@@ -27,3 +30,4 @@ function watch() {
 
 exports.style = style;
 exports.watch = watch;
+
